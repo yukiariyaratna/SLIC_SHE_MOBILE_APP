@@ -1,7 +1,6 @@
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
@@ -23,8 +22,9 @@ export default function RootLayout() {
       <Stack.Screen name="index" options={{ headerShown: false }} />
         <Stack.Screen name="home" options={{ headerShown: false }} />
         <Stack.Screen name="login" options={{ headerShown: false }} />
-        <Stack.Screen name="notification" options={{ title: 'Notifications' }} />
+        {/* <Stack.Screen name="notification" options={{ title: 'Notifications' }} /> */}
         <Stack.Screen name="userDetails" options={{ headerShown: false }} />
+        <Stack.Screen name="dependentDetails" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
       </Stack>
       {/* <StatusBar style="auto" /> */}
